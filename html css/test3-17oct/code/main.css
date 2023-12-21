@@ -1,0 +1,189 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+   background-color: black;
+  
+}
+
+.container{
+    box-shadow: 0 0 50px 0px rgba(80, 41, 143, 0.37);
+    width: 88%;
+    height: 800px;
+    position: relative;
+     margin: 70px auto 30px auto;
+
+}
+.slide {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+
+   background-color:rgb(10, 2, 19) ;
+   
+    color: aliceblue;
+}
+ .slide table {
+    width: 100%;
+    height: 75%;
+    padding-left: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+ }
+ .slide table td{
+    border-bottom: 1px solid rgb(56, 56, 56);
+    cursor: pointer;
+ }
+ .slide table td:hover{
+    color: rgb(64, 106, 161);
+ }
+ 
+ .slide table th{
+    color: gray;
+    padding: 0;
+    text-align: center;
+ }
+.slide table :nth-child(2){
+    color: gray;
+    cursor:help;
+}
+.slide table :nth-child(6) {
+    color: gray;
+    cursor: help;
+}
+
+.nav{
+   
+    height: 10%;
+    width: 80%;
+    right: 0;
+    position: absolute;
+    background-image: url(../image/note.jpg);
+    background-size: contain;
+    background-blend-mode: multiply;
+    background-color: rgb(151, 122, 231);
+    color: aliceblue;
+    min-width: 10%;
+    max-width: 80%;
+    
+
+}
+.nav li{
+    display: inline-block;
+    margin-left:30px;
+    margin-top: 25px;
+    padding-left: 10px;
+    color: rgb(189, 187, 187);
+
+}
+.nav li input{
+    margin-left: 100%;
+    border: none;
+    height: 35px;
+    width: 150%;
+    background-color: rgba(103, 100, 105, 0.411);
+    color: aliceblue;
+    text-align: center;
+}
+.nav li:last-child{
+    margin-left: 10%; 
+}
+.nav li:nth-child(5){
+
+    margin-left: 45%;
+}
+.nav li:hover{
+    color: rgb(72, 93, 185);
+    cursor: pointer;
+}
+.base{
+
+    height: 90%;
+    bottom: 0;
+    width: 80%;
+    position: absolute;
+    right: 0;
+    color: rgb(135, 136, 138);
+}
+.trand{
+    
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    background-image: url(../image/r.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgba(179, 117, 238, 0.897);
+}
+.trand h1{
+    margin-top: 6%;
+    
+    padding: 10px;
+    font-size: 60px;
+    color: aliceblue;
+}
+.trand h3{
+    padding: 20px;
+}
+.trand button{
+    position: absolute;
+    left: 10%;
+    margin-top: 40px;
+    width: 15%;
+    background-color: rgb(127, 55, 160);
+    color: aliceblue;
+    font-size: large;
+    font-family: sans-serif;
+    
+    height:50px;
+    border-radius: 35px;
+    border: none;
+    
+}
+.trand button:hover{
+    background-color: rgb(102, 85, 194);
+    cursor: pointer;
+}
+
+.player{
+  
+    position: absolute;
+    width: 75%;
+    height: 45%;
+    right: 2.5%;
+    bottom: 0%;
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.player table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+
+}
+.player table td{
+
+    padding: 10px;
+    color: gray;
+   
+}
+.player table td:first-child{
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    height: 33%;
+    left: 0;
+}
+.player table td:nth-child(n):hover{
+
+   background-color: rgba(23, 3, 49, 0.322);
+   cursor: pointer;
+}

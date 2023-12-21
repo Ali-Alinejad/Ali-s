@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: gray;
+
+
+
+
+}
+
+
+
+.btn-conteiner {
+    display: flex;
+    justify-content: center;
+    --color-text: #ffffff;
+    --color-background: rgba(236, 236, 236, 0.068);
+    --color-outline: #ffffff67;
+    --color-shadow: #00000080;
+
+}
+
+.btn-content {
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    border: 1px solid white;
+    font-size: 10px;
+    color: var(--color-text);
+    background: var(--color-background);
+    transition: 1s;
+
+    border: none;
+    margin: auto;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.btn-content:hover,
+.btn-content:focus {
+    transition: 0.5s;
+    -webkit-animation: btn-content 1s;
+    animation: btn-content 1s;
+    outline: 0.1em solid transparent;
+    outline-offset: 0.2em;
+    box-shadow: 0 0 0.4em 0 var(--color-background);
+    border: 1px solid white;
+}
+
+.btn-content .icon-arrow {
+    transition: 0.5s;
+    margin-right: 0px;
+    transform: scale(0.6);
+
+}
+
+.btn-content:hover .icon-arrow {
+    transition: 0.5s;
+    margin-right: 50px;
+}
+
+.icon-arrow {
+    width: 10px;
+    margin-left: 10px;
+    position: relative;
+
+}
+
+/* SVG */
+#arrow-icon-one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+#arrow-icon-two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.btn-content:hover #arrow-icon-three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.btn-content:hover #arrow-icon-one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.btn-content:hover #arrow-icon-two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+@keyframes color_anim {
+    0% {
+        fill: rgba(255, 255, 255, 0.24);
+    }
+
+    50% {
+        fill: var(--color-background);
+    }
+
+    100% {
+        fill: rgba(255, 255, 255, 0.151);
+    }
+}
+
+/* Button animations */
+@-webkit-keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+@keyframes btn-content {
+    0% {
+        outline: 0.2em solid var(--color-background);
+        outline-offset: 0;
+    }
+}
+
+.top {
+
+    grid-area: 1 / 1 / 3 / 13;
+    display: flex;
+    text-align: center;
+
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.searchbar {
+    border: 1px solid white;
+    width: 20%;
+    border-radius: 30px;
+    height: 50px;
+    background-color: #fffafa17;
+    margin-right: 1%;
+    font-size: large;
+    color: rgba(219, 219, 219, 0.637);
+    text-align: center;
+
+}
+
+.notif {
+
+    font-size: 120px;
+    font-family: oswald;
+    color: #ffffff;
+    display: grid;
+    margin-top: 40%;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+
+.city {
+    grid-area: 2 / 1 / 3 / 2;
+    font-size: 40%;
+    margin-left: 30%;
+    margin-top: 20%;
+    font-family: cursive;
+}
+
+.temp {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.container {
+
+    width: 100%;
+    height: 100vh;
+    border-radius: 25px;
+    z-index: 0;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+}
+
+.midl {
+    background-image: url("weather\ icons/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-color: #00000093;
+    grid-area: 1 / 1 / 16 / 11;
+}
+
+.detail {
+    font-size: 25px;
+    margin-top: 100px;
+    text-align: center;
+    grid-area: 3 / 10 / 4 / 13;
+    color: aliceblue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+    background-color: #000000ad;
+}
+
+.material-symbols-outlined {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.wind,
+.deg,
+.weather,
+.humidity,
+.pressure {
+    font-family: 'Impact, Haettenschweiler, ' Arial Narrow Bold', sans-serif';
+    font-size: 18px;
+    color: #ffffffd7;
+}
+
+.wind {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.deg {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+.weather {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.humidity {
+    grid-area: 4 / 1 / 5 / 2;
+}
+
+.pressure {
+    grid-area: 5 / 1 / 6 / 2;
+}

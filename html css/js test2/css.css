@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    text-align: center;
+    background-color: rgb(75, 74, 74);
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, #7f3661, #753a6b, #693f73, #5a4378, #4a477c, #3d4a7d, #2f4c7c, #204e7a, #154f76, #0e5072, #0b516c, #0f5167);
+}
+
+.btns {
+
+
+    margin: 5%;
+
+
+}
+
+.btn1 {
+    padding: 5px 25px;
+    margin-left: 50px;
+    width: 20%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, var(--c1, #bc65f6), var(--c2, #3c3ac4) 51%, var(--c1, #4e6bcc)) var(--x, 0)/ 200%;
+    transition: 0.5s;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn1:hover {
+    --x: 100%;
+    transition: 500ms;
+    cursor: pointer;
+    font-size: large;
+    box-shadow: 0px 0px 1px 10px rgba(116, 115, 115, 0.308);
+
+    transition: 500ms;
+    color: aliceblue;
+    --c1: #e565f6;
+
+    --c2: #3f3db3;
+}
+
+.btn2 {
+    background-color: #21b6fb00;
+    margin-left: 50px;
+    width: 10%;
+    height: 35px;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    left: 550px;
+    top: 20px;
+    transition: 0.5s;
+    font-size: 25px;
+
+}
+
+.btn2:hover {
+
+    transition: 500ms;
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+
+}
+
+.btn3 {
+    padding: 5px 25px;
+    margin-left: 50px;
+    width: 20%;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, var(--c1, #347c1e), var(--c2, #3c3ac4) 51%, var(--c1, #4e6bcc)) var(--x, 0)/ 200%;
+    transition: 0.5s;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.btn3:hover {
+    --x: 100%;
+    transition: 500ms;
+    cursor: pointer;
+    font-size: large;
+    box-shadow: 0px 0px 1px 10px rgba(116, 115, 115, 0.308);
+
+    transition: 500ms;
+    color: aliceblue;
+    --c1: #25b66d;
+    --c2: #3f3db3;
+}
+
+.page2 {
+
+    height: 50vh;
+    width: 90%;
+    margin: auto;
+    padding: 15%;
+    border-radius: 32px;
+    background-image: linear-gradient(to right bottom, #d382b2, #c985c0, #bc89cc, #ac8ed8, #9794e1, #7f92db, #678fd3, #4f8bc9, #377db0, #246f97, #16607f, #0f5167);
+    box-shadow: 6px 6px 12px #0000009a,
+        -6px -6px 12px #00000025;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: large;
+
+    position: relative;
+}
+
+.hidden {
+
+    display: nosne;
+
+}

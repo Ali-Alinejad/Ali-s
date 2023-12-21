@@ -1,0 +1,78 @@
+h1 {
+    color: blanchedalmond;
+    border: solid;
+    background-color: cornflowerblue;
+    position: relative;;
+    text-align: center;
+    cursor: pointer;
+    padding: 0%;
+    margin: 0%;
+    transform: rotate();
+}
+
+body
+ {
+border: 2px  dotted  #958621 ;
+font-family: 'Courier New', Courier, monospace;
+font-size: 14px;
+text-align: center;
+}
+
+.container {
+ border-style: groove;
+ background-color:darkseagreen;
+ font-style:initial;
+ font-size: larger;
+ color: cornsilk;
+
+ 
+}
+
+.cat {
+
+    text-align: left;
+    margin:2px;
+    line-height: 5p;
+    border: solid #562154 2px;
+    border-radius: 20px;
+    color: whitesmoke;
+    background-color: darksalmon;
+    
+}
+.cat li {
+    border-bottom: solid;
+}
+.email {
+    padding: 10px 15px;
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.email{
+    background-color: darkcyan;
+
+}
+
+.email label {
+    display: block;
+}
+.button{
+    color: aliceblue;
+    background-color: red;
+    text-align: center;  
+    margin: 10px;
+    width: 100%;
+   
+}
+.blk {
+    
+float: left;
+width: 33% ;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+border: 1px solid #562154;
+padding: 10px;
+box-sizing: border-box;
+}
+.clr {
+    clear: both;
+}

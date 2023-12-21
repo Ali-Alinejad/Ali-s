@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+.main {
+    border: 1px solid black;
+    height: 97vh;
+    margin: 10px 10px 0px 10px;
+
+
+}
+
+.top {
+    background-color: gray;
+    height: 20%;
+    display: flex;
+
+
+}
+
+.text2 {
+    font-size: 30px;
+    color: rgb(107, 93, 233);
+}
+
+.score {
+    background-color: darkgray;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.profile input {
+    margin-left: 18px;
+    border: none;
+    height: 45px;
+    background-color: rgb(73, 73, 73);
+
+}
+
+.score label {
+    margin: 2%;
+}
+
+.profile {
+    background-color: rgb(92, 89, 89);
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mid {
+    background-color: rgb(49, 31, 66, 134);
+    height: 600px;
+}
+
+.mid input {
+    display: block;
+    align-items: center;
+
+}
+
+.checks {
+    margin: 0 0 0 47%;
+}
+
+.reset {
+    margin: 5% 0 0 47%;
+}
+
+.gs {
+    margin: 5% 0 0 45.5%;
+    width: 2500px;
+}
+
+body {
+    background-color: rgb(49, 48, 47, 115);
+    text-align: center;
+}
+
+.notif {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+
+}
+
+.mid {
+    display: grid;
+    position: relative;
+    text-align: center;
+}
+
+.random {
+    height: 100px;
+    background-color: rgb(110, 80, 136);
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.check input {
+    height: 70px;
+    width: 140px;
+    box-shadow: 0px 8px 31px 3px rgba(0, 0, 0, 0.35);
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.checks:hover {
+    cursor: pointer;
+    background-color: rgb(9, 111, 151);
+    box-shadow: 0px 8px 31px 3px rgba(194, 155, 212, 0.35);
+    transition: 500ms;
+
+}
+
+.reset:hover {
+    cursor: pointer;
+    background-color: rgb(172, 130, 41);
+    box-shadow: 0px 8px 31px 3px rgba(226, 102, 0, 0.35);
+    transition: 500ms;
+}
+
+
+.result input {
+    width: 200px;
+    height: 100px;
+    font-size: 80px;
+    text-align: center;
+    background-color: rgb(52, 41, 63);
+    color: blanchedalmond;
+
+}
