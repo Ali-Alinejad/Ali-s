@@ -2,13 +2,15 @@ let x = 1;
 let radif = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
 document.querySelector(".wrapper").addEventListener("click", function () {
-  document.querySelector(".result").textContent = "";
+  /*  document.querySelector(".result").textContent = "";
   for (let i = 1; i <= 10; i++) {
     document.querySelector(".btn" + i).value = "";
 
     document.querySelector(".btn" + i).style.backgroundColor = "white";
     document.querySelector(".container").style.backgroundColor = "#05050500";
-  }
+  } */
+  location.reload();
+  history.go();
 });
 
 for (let i = 1; i <= 10; i++) {
