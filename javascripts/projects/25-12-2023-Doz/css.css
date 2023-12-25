@@ -80,13 +80,30 @@ body {
     padding: 10px 45px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 60px;
     border: none;
     border-radius: 100%;
     transition: 1s;
-    color: aliceblue;
+    color: rgb(240, 255, 246);
     background-color: #33333300;
     transform: skewX(-15deg);
+}
+
+
+.result {
+
+    padding: 10px 45px;
+
+    font-family: sans-serif;
+    font-size: 50px;
+    margin: auto;
+    border: none;
+    border-radius: 100%;
+    transition: 2s;
+    color: aliceblue;
+    background-color: #33333300;
+
+
 }
 
 .cta:focus {
