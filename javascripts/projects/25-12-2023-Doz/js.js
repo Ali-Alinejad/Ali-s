@@ -14,8 +14,7 @@ for (let i = 1; i <= 10; i++) {
       radif[i - 1] = document.querySelector(".btn" + i).value;
       document.querySelector(".btn" + i).style.backgroundColor = "#6225E6";
     }
-    console.log(radif[i - 1]);
-    console.log(radif);
+
     if (
       (radif[0] == radif[1] && radif[0] == radif[2]) ||
       (radif[0] == radif[3] && radif[0] == radif[6]) ||
@@ -26,7 +25,14 @@ for (let i = 1; i <= 10; i++) {
       (radif[2] == radif[5] && radif[2] == radif[8]) ||
       (radif[6] == radif[7] && radif[7] == radif[8])
     ) {
-      document.querySelector(".container").style.backgroundColor = "green";
+      document.querySelector(".container").style.backgroundColor =
+        "rgb(24,126,54)";
     }
   });
 }
+document.querySelector(".cta").addEventListener("click", function () {
+  for (let i = 1; i <= 10; i++) {
+    document.querySelector(".btn" + i).textContent = " ";
+    document.querySelector("body").style.backgroundColor = "#FBC638";
+  }
+});
