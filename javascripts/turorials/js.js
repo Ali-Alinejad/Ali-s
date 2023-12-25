@@ -26,7 +26,7 @@ console.log(resturant.starting);
   resturant.starting[0],
 ]; */
 "use strict";
-/* const resturant = {
+const resturant = {
   nikename: "italiano",
   location: "manhattan,NY",
   Categories: ["italiano", "pizza", "pasta", "organic"],
@@ -56,7 +56,7 @@ console.log(resturant.starting);
   },
 };
 
-resturant.ordering({
+/* resturant.ordering({
   time: "22:01",
   addresss: "theran,eslamshahr",
   startingindex: 2,
@@ -68,9 +68,7 @@ console.log(resturant.hours);
 const {
   wed: { open: v, close: b },
 } = resturant.opening;
-console.log(v, b);
- */
-
+console.log(v, b); */
 /* console.log("" || "ali");
 console.log(typeof (0 && "ali"));
 console.log(typeof (2 && "ali"));
@@ -89,7 +87,7 @@ console.log(resturant1);
 console.log(resturant2);
  */
 ///////////////////chalenge with football
-
+/* 
 const thegame = {
   team1: "bayern",
   team2: "dortmond",
@@ -105,8 +103,8 @@ const thegame = {
     x: 3.25,
     team2: 6.5,
   },
-};
-const [players1, players2] = thegame.players;
+}; */
+/* const [players1, players2] = thegame.players;
 const [gk, ...fieldplayers] = players1;
 console.log(gk, players1);
 const allplayers = [...players1, ...players2, "scholse"];
@@ -114,4 +112,5 @@ console.log(allplayers);
 thegame.odds.team1 > thegame.odds.team2 &&
   console.log(`team ${thegame.team2} likely to win`);
 thegame.odds.team2 > thegame.odds.team1 &&
-  console.log(`team ${thegame.team1} likely to win`);
+  console.log(`team ${thegame.team1} likely to win`); */
+/* for (const day of thegame.players[1]) console.log(day); */
