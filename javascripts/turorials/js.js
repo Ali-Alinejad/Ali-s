@@ -33,7 +33,7 @@ const resturant = {
   starting: ["Ash", "sowp", "saladshirzi"],
   mainmenu: ["pizaa", "joje", "kababkobide"],
   opening: {
-    thu: {
+    Thu: {
       open: 12,
       close: 23,
     },
@@ -41,7 +41,7 @@ const resturant = {
       open: 10,
       close: 24,
     },
-    wed: {
+    Wed: {
       open: 8,
       close: 20,
     },
@@ -55,6 +55,12 @@ const resturant = {
     );
   },
 };
+const day = ["Thu", "Fri", "Wed", "Sat", "Sun", "Mon", "Tue"];
+for (const iterator of day) {
+  const open = resturant.opening[iterator]?.open || "unkown";
+
+  console.log(`we on ${iterator} open at ${open}`);
+}
 
 /* resturant.ordering({
   time: "22:01",
