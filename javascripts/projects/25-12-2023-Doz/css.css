@@ -10,6 +10,7 @@ body {
     background: rgb(251, 198, 56);
     background: linear-gradient(306deg, rgba(251, 198, 56, 1) 0%, rgba(171, 54, 246, 1) 64%, rgba(98, 37, 230, 1) 100%);
     height: 100vh;
+
 }
 
 .container {
@@ -44,7 +45,7 @@ body {
     font-size: 70px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     border-radius: 158px;
-    background: #fafafadc;
+    background: white;
     box-shadow: 5px 5px 42px #636363,
         -5px -5px 42px #ffffff4b;
 
@@ -71,6 +72,7 @@ body {
     margin: 18% 0% 0% 0;
     width: 50%;
     scale: 60%;
+
 }
 
 .cta {
@@ -79,11 +81,11 @@ body {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 40px;
-    color: white;
+    border: none;
     border-radius: 100%;
-
     transition: 1s;
-
+    color: aliceblue;
+    background-color: #33333300;
     transform: skewX(-15deg);
 }
 
@@ -94,6 +96,7 @@ body {
 .cta:hover {
     transition: 1s;
     box-shadow: 10px 10px 0 #FBC638;
+    cursor: pointer;
 }
 
 .cta span:nth-child(2) {
@@ -147,7 +150,7 @@ path.two {
 
 @keyframes color_anim {
     0% {
-        fill: white;
+        fill: rgb(95, 0, 173)
     }
 
     50% {
@@ -155,6 +158,6 @@ path.two {
     }
 
     100% {
-        fill: white;
+        fill: rgb(146, 132, 0);
     }
 }

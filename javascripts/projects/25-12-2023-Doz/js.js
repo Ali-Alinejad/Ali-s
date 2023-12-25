@@ -1,7 +1,15 @@
 let x = 1;
 const radif = [0, 1, 2, 3, 4, 5, 6, 7, 8];
 
-console.log(typeof radif);
+document.querySelector(".wrapper").addEventListener("click", function () {
+  console.log("hi");
+  for (let i = 1; i <= 10; i++) {
+    document.querySelector(".btn" + i).value = " ";
+    document.querySelector(".btn" + i).style.backgroundColor = "white";
+    document.querySelector(".container").style.backgroundColor = "#05050500";
+  }
+});
+
 for (let i = 1; i <= 10; i++) {
   document.querySelector(".btn" + i).addEventListener("click", function () {
     x++;
@@ -30,9 +38,3 @@ for (let i = 1; i <= 10; i++) {
     }
   });
 }
-document.querySelector(".cta").addEventListener("click", function () {
-  for (let i = 1; i <= 10; i++) {
-    document.querySelector(".btn" + i).textContent = " ";
-    document.querySelector("body").style.backgroundColor = "#FBC638";
-  }
-});
