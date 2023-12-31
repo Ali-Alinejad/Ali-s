@@ -25,7 +25,7 @@ console.log(resturant.starting);
   resturant.starting[1],
   resturant.starting[0],
 ]; */
-"use strict";
+"use strict"; /* 
 const resturant = {
   nikename: "italiano",
   location: "manhattan,NY",
@@ -61,7 +61,7 @@ for (const iterator of day) {
 
   console.log(`we on ${iterator} open at ${open}`);
 }
-
+ */
 /* resturant.ordering({
   time: "22:01",
   addresss: "theran,eslamshahr",
@@ -120,3 +120,7 @@ thegame.odds.team1 > thegame.odds.team2 &&
 thegame.odds.team2 > thegame.odds.team1 &&
   console.log(`team ${thegame.team1} likely to win`); */
 /* for (const day of thegame.players[1]) console.log(day); */
+const a = "Air line b";
+console.log(a.length);
+console.log(a.indexOf("i"));
+console.log(a.includes("i"));
