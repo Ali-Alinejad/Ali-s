@@ -120,7 +120,16 @@ thegame.odds.team1 > thegame.odds.team2 &&
 thegame.odds.team2 > thegame.odds.team1 &&
   console.log(`team ${thegame.team1} likely to win`); */
 /* for (const day of thegame.players[1]) console.log(day); */
-const a = "Air line b";
+const a = "Air line bangladesh";
+
 console.log(a.length);
+//first
 console.log(a.indexOf("i"));
+//true-false
 console.log(a.includes("i"));
+//cut
+console.log(a.slice(0));
+//range
+console.log(a.slice(1, 14));
+//last space
+console.log(a.slice(a.lastIndexOf(" ")));
