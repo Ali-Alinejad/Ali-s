@@ -120,7 +120,7 @@ thegame.odds.team1 > thegame.odds.team2 &&
 thegame.odds.team2 > thegame.odds.team1 &&
   console.log(`team ${thegame.team1} likely to win`); */
 /* for (const day of thegame.players[1]) console.log(day); */
-const a = "Air line bangladesh";
+/* const a = "Air line bangladesh";
 
 console.log(a.length);
 //first
@@ -133,3 +133,23 @@ console.log(a.slice(0));
 console.log(a.slice(1, 14));
 //last space
 console.log(a.slice(a.lastIndexOf(" ")));
+ */
+//----------------------------------------------
+/* function dikte(name) {
+  const down = passngr.toLowerCase();
+
+  const up = down[0].toUpperCase() + down.slice(1);
+
+  return console.log(up);
+}
+
+const passngr = "moHaamaD";
+
+dikte(passngr);
+ */
+//-----------------------------------------------
+
+/* const a = "All passangers come to boarding door 23 , door23";
+console.log(a.replace("door", "gate")); // just first door will be change.
+console.log(a.replace(/door/g, "gate")); //  /door/ =>string -- / /g => global
+ */
