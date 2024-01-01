@@ -25,7 +25,10 @@ console.log(resturant.starting);
   resturant.starting[1],
   resturant.starting[0],
 ]; */
-"use strict"; /* 
+
+"use strict";
+
+/* 
 const resturant = {
   nikename: "italiano",
   location: "manhattan,NY",
@@ -153,3 +156,29 @@ dikte(passngr);
 console.log(a.replace("door", "gate")); // just first door will be change.
 console.log(a.replace(/door/g, "gate")); //  /door/ =>string -- / /g => global
  */
+
+//boleans on string return
+/* const airplane = "Airbus A320";
+
+console.log(airplane.includes("Airbus")); //true
+console.log(airplane.startsWith("Airb")); //true
+ */ //---------------------------------------------
+/* const namee = "mr+Ali+Alinejad";
+const [sex, first, last] = namee.split("+");
+const a = [sex, first, last.toUpperCase()].join("  ");
+console.log(a);
+
+ */
+const apiflight = "Turkey_france_10:45_gate2";
+const [from, to, time, gate] = apiflight.split("_");
+console.log(
+  `airplane from ${from} to ${to} its time to bording time: ${time.replace(
+    ":",
+    "H"
+  )} `
+);
+
+const a = apiflight.split();
+
+const cities = apiflight.split("_").slice(0, 2);
+console.log(cities);
