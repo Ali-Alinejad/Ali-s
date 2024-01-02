@@ -169,7 +169,7 @@ const a = [sex, first, last.toUpperCase()].join("  ");
 console.log(a);
 
  */
-const apiflight = "Turkey_france_10:45_gate2";
+/* const apiflight = "Turkey_france_10:45_gate2";
 const [from, to, time, gate] = apiflight.split("_");
 console.log(
   `airplane from ${from} to ${to} its time to bording time: ${time.replace(
@@ -182,3 +182,16 @@ const a = apiflight.split();
 
 const cities = apiflight.split("_").slice(0, 2);
 console.log(cities);
+ */
+
+const iranair = {
+  name: "iranAir",
+  fly: "A747",
+  booking: function (passnger, flight) {
+    console.log(`mr/ms ${passnger} ,your number flight is ${flight}`);
+  },
+};
+
+const books = iranair.booking;
+
+books("ali", 25);
