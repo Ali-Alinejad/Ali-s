@@ -26,8 +26,6 @@ console.log(resturant.starting);
   resturant.starting[0],
 ]; */
 
-"use strict";
-
 /* 
 const resturant = {
   nikename: "italiano",
@@ -184,14 +182,24 @@ const cities = apiflight.split("_").slice(0, 2);
 console.log(cities);
  */
 
-const iranair = {
+/* const iranair = {
   name: "iranAir",
   fly: "A747",
-  booking: function (passnger, flight) {
-    console.log(`mr/ms ${passnger} ,your number flight is ${flight}`);
+  list: [],
+  booking(passnger, flight) {
+    iranair.list.push({ flyname: ` ${flight}` }, passnger);
   },
 };
 
 const books = iranair.booking;
 
 books("ali", 25);
+books("ali", 25);
+books("ali", 25);
+console.log(iranair.list);
+ */
+const calctax = (rate) => (value) => {
+  return value + value * rate;
+};
+const a = calctax(0.09);
+console.log(a(25));
