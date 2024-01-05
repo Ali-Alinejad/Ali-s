@@ -211,7 +211,7 @@ console.log(a(25));
 const answer = Number(prompt("whats your fav lang : 1.js  2.ph  3.c++"));
  */
 //--------------closures----------------
-const booking = function () {
+/* const booking = function () {
   let mosafer = 0;
   return function () {
     mosafer++;
@@ -225,3 +225,13 @@ book();
 book();
 book();
 book();
+ */
+
+const mov = [15, 20, 15, 20, 15];
+let k = 0;
+for (let i of mov) {
+  k = k + i;
+}
+
+k /= mov.length;
+console.log(k);
