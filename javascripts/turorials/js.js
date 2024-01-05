@@ -198,8 +198,30 @@ books("ali", 25);
 books("ali", 25);
 console.log(iranair.list);
  */
-const calctax = (rate) => (value) => {
+/* const calctax = (rate) => (value) => {
   return value + value * rate;
 };
 const a = calctax(0.09);
 console.log(a(25));
+
+
+ */
+
+/* answers: new Array(4).fill(0);
+const answer = Number(prompt("whats your fav lang : 1.js  2.ph  3.c++"));
+ */
+//--------------closures----------------
+const booking = function () {
+  let mosafer = 0;
+  return function () {
+    mosafer++;
+    console.log(`tedad mosaferin :${mosafer}`);
+  };
+};
+
+const book = booking();
+
+book();
+book();
+book();
+book();
