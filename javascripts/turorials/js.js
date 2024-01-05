@@ -226,12 +226,12 @@ book();
 book();
 book();
  */
+//---------------forEach-------------------
+const mov = [200, 150, -400, 250, -650, -130];
 
-const mov = [15, 20, 15, 20, 15];
-let k = 0;
-for (let i of mov) {
-  k = k + i;
-}
-
-k /= mov.length;
-console.log(k);
+mov.forEach(function (movement) {
+  if (movement > 0) console.log("deposit:" + movement);
+  else {
+    console.log("withdraw:" + movement);
+  }
+});
