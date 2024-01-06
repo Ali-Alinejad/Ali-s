@@ -109,6 +109,8 @@ const thegame = {
     team1: 1.33,
     x: 3.25,
     team2: 6.5,
+
+    
   },
 }; */
 /* const [players1, players2] = thegame.players;
@@ -227,7 +229,7 @@ book();
 book();
  */
 //---------------forEach-------------------
-const mov = [200, 150, -400, 250, -650, -130];
+/* const mov = [200, 150, -400, 250, -650, -130];
 
 mov.forEach(function (movement) {
   if (movement > 0) console.log("deposit:" + movement);
@@ -235,3 +237,4 @@ mov.forEach(function (movement) {
     console.log("withdraw:" + movement);
   }
 });
+ */
