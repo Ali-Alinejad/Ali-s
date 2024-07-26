@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.mainsection {
+    background: rgb(226, 213, 219);
+    background: linear-gradient(90deg, rgb(212, 188, 199) 36%, rgba(142, 145, 247, 1) 100%);
+    width: 80vh;
+
+    margin-top: 20%;
+    box-shadow: 50px 50px 100px #9d9d9d,
+        -50px -50px 100px #ffffff;
+    margin-left: 10%;
+    border-radius: 72px;
+    height: 300px;
+    display: inline-flex;
+    padding: 10%;
+    text-align: center;
+}
+
+.left {
+
+    height: 100%;
+    width: 49%;
+    border-right: #9d9d9d 1px solid;
+
+}
+
+.left input {
+    margin-top: 30px;
+    height: 40px;
+    border: none;
+
+}
+
+.right {
+    height: 100%;
+
+    margin-top: 30px;
+    height: 40px;
+    border: none;
+    width: 49%;
+}
