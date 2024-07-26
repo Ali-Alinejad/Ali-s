@@ -34,7 +34,8 @@
     margin-top: 30px;
     height: 40px;
     border: none;
-
+    text-align: center;
+    font-size: larger;
 }
 
 .right {
@@ -44,4 +45,34 @@
     height: 40px;
     border: none;
     width: 49%;
+}
+
+.show {
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.changebtn {
+
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: linear-gradient(90deg, var(--c1, #f6d365), var(--c2, #fda085) 51%, var(--c1, #f6d365)) var(--x, 0)/ 200%;
+    color: white;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.changebtn:hover {
+    --x: 100%;
+}
+
+.btn-1 {
+    --c1: #f6d365;
+    --c2: #fda085;
 }
