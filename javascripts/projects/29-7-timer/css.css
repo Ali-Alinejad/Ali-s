@@ -1,0 +1,59 @@
+.timer {
+    background-color: black;
+    border: 1px solid yellow;
+    height: 90vh;
+    margin-top: 20px;
+    text-align: center;
+    color: aliceblue;
+
+
+}
+
+.show {
+    background-color: rgb(231, 227, 227);
+    border: 1px solid rgb(50, 151, 30);
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    margin-top: 40%;
+    text-align: center;
+    color: aliceblue;
+}
+
+.start {
+    margin-top: 30px;
+    padding: 10px;
+
+}
+
+.start input {
+    padding: 20px;
+    width: 15%;
+    margin: 20px;
+    border: none;
+    box-shadow: 2px 1px 1px 10px rgba(66, 66, 66, 0.404);
+    cursor: pointer;
+    font-size: 14px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.start input:hover {
+
+    box-shadow: 2px 1px 1px 10px rgba(119, 119, 119, 0.404);
+}
+
+.startbtn {
+    background-color: rgb(115, 218, 132);
+}
+
+.stpbtn {
+    background-color: rgb(216, 134, 134);
+}
+
+.label {
+    color: black;
+    font-size: 80px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
