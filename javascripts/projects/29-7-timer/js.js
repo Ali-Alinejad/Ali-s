@@ -7,6 +7,7 @@ let h = 0;
 
 clickstart.addEventListener("click", function () {
   timerr = setInterval(function () {
+    document.querySelector(".show").style.backgroundColor = "white";
     s += 1;
 
     if (s == 60) {
@@ -23,4 +24,5 @@ clickstart.addEventListener("click", function () {
 
 clickstop.addEventListener("click", function () {
   clearInterval(timerr);
+  document.querySelector(".show").style.backgroundColor = "red";
 });
