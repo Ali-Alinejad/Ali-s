@@ -12,8 +12,7 @@
     width: 80vh;
 
     margin-top: 20%;
-    box-shadow: 50px 50px 100px #9d9d9d,
-        -50px -50px 100px #ffffff;
+
     margin-left: 10%;
     border-radius: 72px;
     height: 300px;
@@ -42,11 +41,21 @@
 .right {
     height: 100%;
 
-    margin-top: 30px;
-    height: 40px;
+    margin-top: 0px;
+    margin-left: 5px;
+    height: 140px;
     border: none;
-    width: 49%;
+    width: 50%;
+    background-size: cover;
+    background-image: url(dota.png);
+    background-position: center;
+    background-repeat: no-repeat;
+
+
 }
+
+
+
 
 .show {
     text-align: center;
