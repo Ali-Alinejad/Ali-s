@@ -15,7 +15,7 @@
     height: 100px;
     width: 50%;
     margin: auto;
-    margin-top: 40%;
+    margin-top: 20%;
     text-align: center;
     color: aliceblue;
 }
@@ -53,7 +53,7 @@
 
 .label {
     color: black;
-    font-size: 80px;
+    font-size: 70px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
 }
