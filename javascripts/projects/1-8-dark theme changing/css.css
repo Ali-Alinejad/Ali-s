@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.main {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-color: gray;
+}
+
+.main input {
+
+    margin-top: 50%;
+    border: none;
+    padding: 20px;
+    width: 40%;
+    height: 13%;
+    border-radius: 100px;
+    background-image: url(dark_mode.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.7s;
+    background-color: azure;
+
+
+}
+
+.main input:hover {
+    cursor: pointer;
+    background-position: right;
+    transition: 0.7s;
+    background-image: url(light_mode.png);
+    background-color: rgb(9, 14, 56);
+
+}
