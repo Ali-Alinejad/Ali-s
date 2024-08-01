@@ -24,8 +24,8 @@ document.querySelector(".checks").addEventListener("click", function () {
     } else {
       document.querySelector(".notif").textContent = "YEEEEES";
       document.querySelector(".random").textContent = rand;
-      document.querySelector(".random").style.backgroundColor = "Green";
-      document.querySelector(".profile").style.backgroundColor = "Green";
+      document.querySelector(".random").style.backgroundColor = "lightGreen";
+      document.querySelector(".profile").style.backgroundColor = "lightGreen";
       if (score > highscore) {
         document.querySelector(".text3").textContent = score;
         highscore = score;

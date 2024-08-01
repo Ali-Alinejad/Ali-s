@@ -24,5 +24,6 @@ clickstart.addEventListener("click", function () {
 
 clickstop.addEventListener("click", function () {
   clearInterval(timerr);
+
   document.querySelector(".show").style.backgroundColor = "red";
 });

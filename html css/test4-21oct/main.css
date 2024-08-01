@@ -52,7 +52,7 @@ a {
     letter-spacing: 0.05em;
     border-radius: 0.8em;
     border: none;
-    background: linear-gradient(to right, #8e2de2, #4a00e0);
+    background: linear-gradient(to right, #121113, #4a00e0);
     color: ghostwhite;
     overflow: hidden;
 }
@@ -210,7 +210,7 @@ input {
 
 .heroes {
     margin-top: 200px;
-    
+
     display: flex;
     justify-content: space-around;
 
@@ -292,13 +292,14 @@ input {
     text-shadow: 0px 0px 100px 200px rgb(0, 0, 0);
 }
 
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 900px) {
     .right {
         display: none;
     }
 
     .left {
         width: 100%;
+
 
     }
 
