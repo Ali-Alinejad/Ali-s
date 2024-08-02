@@ -36,36 +36,49 @@
 
 .header {
     grid-area: 1 / 1 / 3 / 4;
-    background-color: rgb(206, 206, 206);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(70, 64, 61) 100%);
+
 }
 
-.bar {}
+.bar {
+    margin-top: 2%;
+    width: 95%;
+    display: inline-flex;
+    justify-content: space-between;
+
+
+}
+
+.midbar input {
+    margin-left: 60px;
+
+}
 
 .bar input {
-
-    border: 0;
-    padding: 2.5%;
-
+    border: none;
     background-color: rgba(240, 248, 255, 0);
-    color: rgb(0, 0, 0);
-
+    color: rgb(146, 146, 146);
+    cursor: pointer;
+    font-family: "B Zar";
+    font-size: 20px;
     font-weight: bold;
-    font-family: ;
-
+    transition: 1s;
 }
 
-.search {
 
-    margin-left: 20%;
+
+.bar input:hover,
+.material-symbols-outlined:hover {
+    transition: 0.5s;
+    color: white;
 }
 
-.menu1 {
-    margin-right: 30%;
-}
 
 .botheader {
     grid-area: 3 / 1 / 5 / 4;
-    background-color: rgb(28, 28, 29);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(70, 64, 61) 100%);
 
 }
 
@@ -77,10 +90,26 @@
     grid-area: 2 / 1 / 4 / 4;
     width: 70%;
     margin-left: 15%;
-    background-blend-mode: multiply;
-    background-color: rgba(196, 196, 196, 0.753);
+    border-radius: 30px;
+    box-shadow: 50px 50px 100px #000000c5,
+        -50px -50px 100px #14141400;
 
 }
+
+.material-symbols-outlined {
+    scale: 1.5;
+    font-variation-settings:
+        'FILL' 1,
+        'wght' 500,
+        'GRAD' 10000,
+        'opsz' 45;
+    color: rgb(204, 204, 204);
+    margin: 5px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+
 
 .intro {
     grid-area: 2 / 1 / 4 / 4;
@@ -89,6 +118,7 @@
     width: 90%;
     margin-left: 5%;
     margin-top: 180px;
+    border-radius: 30px;
 }
 
 .div3 {
