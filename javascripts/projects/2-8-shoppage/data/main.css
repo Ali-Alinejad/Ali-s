@@ -77,8 +77,8 @@
 
 .botheader {
     grid-area: 3 / 1 / 5 / 4;
-    background: rgb(0, 0, 0);
-    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgb(70, 64, 61) 100%);
+
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(70, 64, 61) 100%);
 
 }
 
@@ -113,12 +113,26 @@
 
 .intro {
     grid-area: 2 / 1 / 4 / 4;
-    background-color: rgb(56, 56, 56);
+    background-color: rgba(0, 0, 0, 0.918);
     height: 100vh;
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 180px;
+    width: 100%;
+    margin-top: 220px;
+
+}
+
+.one {
+    height: 100%;
+
+    /* 100 * 16 / 9 */
+    min-width: 100%;
+    min-height: 56.25vw;
+    /* 100 * 9 / 16 */
+    overflow: hidden;
     border-radius: 30px;
+    margin-bottom: 40px;
+    background-repeat: repeat;
+    background-size: cover;
+
 }
 
 .div3 {
