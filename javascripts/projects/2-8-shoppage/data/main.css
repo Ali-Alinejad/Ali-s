@@ -20,6 +20,7 @@
     background-size: contain;
     background-blend-mode: multiply;
     background-color: rgb(80, 80, 80);
+    position: relative;
 }
 
 .title {
@@ -93,7 +94,34 @@
     border-radius: 30px;
     box-shadow: 50px 50px 100px #000000c5,
         -50px -50px 100px #14141400;
+    position: relative;
+    transition: 1s;
 
+}
+
+.logo p {
+    position: absolute;
+    left: 10px;
+    top: 250px;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+.logomain {
+    position: absolute;
+    left: 20px;
+    top: 290px;
+    font-family: "Calistoga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 90px;
+    background: -webkit-linear-gradient(rgb(255, 123, 0), rgb(168, 55, 55));
+    -webkit-background-clip: text;
+    text-shadow: 1px 1px 1px #ffbd5bc5,
+        -50px -50px 100px #ffffff00;
+    -webkit-text-fill-color: transparent;
 }
 
 .material-symbols-outlined {
@@ -132,6 +160,60 @@
     margin-bottom: 40px;
     background-repeat: repeat;
     background-size: cover;
+
+}
+
+.slide {
+    z-index: 0;
+
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    padding-right: 5%;
+    text-align: center;
+
+
+}
+
+.sideitems {
+    position: absolute;
+    left: 0;
+    width: 400px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: rgb(187, 187, 187);
+    height: 100vh;
+    z-index: 10;
+
+
+}
+
+.sideitems ul {
+    margin-top: 50px;
+
+}
+
+#closemenu {
+
+    margin-left: 30px;
+}
+
+.sideitems li {
+    padding: 20px;
+    margin-top: 50px;
+    border-bottom: 1.5px solid rgb(68, 68, 68);
+    padding-bottom: 70px;
+
+
+}
+
+.sideitems li:hover {
+
+    cursor: pointer;
+    color: aliceblue;
+    transition: 0.5s;
+    background-color: rgb(194, 52, 52);
 
 }
 
