@@ -18,5 +18,27 @@ function openNav() {
   document.getElementById("menu1").textContent = " ";
   document.getElementById("sideitems").style.transform = "translateX(0px)";
   document.getElementById("sideitems").style.transition = "1s";
-  document.getElementById("sideitems").blur = "true";
+}
+
+//scroll
+window.onscroll = function () {
+  scrollFunction();
+};
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 50 ||
+    document.documentElement.scrollTop > 100
+  ) {
+    document.getElementById("bar").style.fontSize = "30px";
+    document.getElementById("bar").style.height = "130px";
+    document.querySelector(".logopic").style.height = "100px";
+    document.querySelector(".logopic").style.width = "100";
+    document.querySelector(".midbar").style.opacity = "0";
+  } else {
+    document.getElementById("bar").style.fontSize = "90px";
+    document.getElementById("bar").style.height = "280px";
+    document.querySelector(".logopic").style.height = "180px";
+    document.querySelector(".logopic").style.width = "180";
+    document.querySelector(".midbar").style.opacity = "1";
+  }
 }

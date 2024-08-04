@@ -8,8 +8,8 @@
 :root {
 
     --main-font: #f3e98b;
-    --bc-page: #000000d3;
-    --off-font: rgb(212, 186, 38);
+    --bc-page: #000000;
+    --off-font: rgb(37, 37, 37);
 
 }
 
@@ -21,11 +21,9 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
-    background-color: var(--bc-page);
-    background-image: url(../pic/00001209.jpg);
-    background-size: contain;
-    background-blend-mode: multiply;
-    background-color: var(--off-font);
+    background-image: linear-gradient(to top, #111111, #0d0d0d, #090909, #050505, #000000);
+    background-repeat: repeat;
+    background-size: cover;
     position: relative;
 }
 
@@ -43,8 +41,8 @@
 
 .header {
     grid-area: 1 / 1 / 3 / 4;
-    background: var(--bc-page);
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(70, 64, 61) 100%);
+
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.466) 0%, rgb(70, 64, 61) 100%);
 
 
 }
@@ -52,20 +50,24 @@
 .bar {
 
     background-color: var(--bc-page);
-    height: 260px;
+    height: 280px;
     width: 100%;
-    display: inline-flex;
-    justify-content: space-between;
+    position: fixed;
+    transition: 1s;
+    z-index: 10;
+
 }
 
-.midbar {
-    text-align: center;
 
+.midbar {
+    margin-top: 130px;
+    transition: 1.5s;
 }
 
 .midbar input {
 
     margin-left: 58px;
+
 
 }
 
@@ -78,7 +80,7 @@
     font-size: 18px;
     font-weight: bold;
     transition: 1s;
-    margin-top: 35%;
+    margin-top: 89px;
     position: relative;
 }
 
@@ -90,30 +92,37 @@
     color: rgb(224, 179, 29);
 }
 
-.menu1 {
-    padding-left: 50px;
+
+.leftbar {
+    position: absolute;
+    padding-left: 20px;
+
 }
 
 .botheader {
     grid-area: 3 / 1 / 5 / 4;
-
+    height: 300px;
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(70, 64, 61) 100%);
 
 }
 
 .logopic {
-
+    z-index: 11;
     position: absolute;
     height: 180px;
     width: 180px;
     top: 0;
-    left: 44%;
+    left: 45%;
     margin-top: 10px;
     /* 100 * 16 / 9 */
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-image: url(../pic/logopic.png);
+    position: fixed;
+
+    background-color: #000000;
+    transition: 1s;
 
 }
 
@@ -171,9 +180,17 @@
     margin: 5px;
     cursor: pointer;
     margin-right: 30px;
+    z-index: 1000;
 }
 
+.rightbar {
 
+    text-align: right;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
 
 .intro {
     grid-area: 2 / 1 / 4 / 4;
@@ -192,7 +209,7 @@
     min-height: 50VH;
     /* 100 * 9 / 16 */
     overflow: hidden;
-    margin-top: 150px;
+    margin-top: 300px;
     margin-bottom: 40px;
     background-repeat: repeat;
     background-size: cover;
@@ -200,8 +217,8 @@
 }
 
 .slide {
-    z-index: 0;
-
+    z-index: 110;
+    z-index: 1000;
     height: 100px;
     position: absolute;
     right: 0;
@@ -215,39 +232,11 @@
 .sideitems {
     position: absolute;
     left: 0;
-    width: 300px;
+    width: 270px;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.842);
     color: var(--main-font);
     height: 100vh;
-    z-index: 10;
-
-
-}
-
-.sideitems ul {
-    margin-top: 50px;
-
-}
-
-#closemenu {
-
-    margin-left: 30px;
-    transition: 0.5s;
-}
-
-.sideitems li {
-    padding: 20px;
-    margin-top: 50px;
-    border-bottom: 1.5px solid rgba(68, 68, 68, 0.253);
-    padding-bottom: 70px;
-
-
-
-}
-
-.sideitems {
-
+    z-index: 12;
 
     position: absolute;
     right: 0;
@@ -256,10 +245,36 @@
     background-color: rgba(0, 0, 0, 0.842);
     color: var(--main-font);
     height: 100vh;
-    z-index: 10;
+}
+
+.sideitems ul {
+    margin-top: 50px;
+    z-index: 11;
+
+}
+
+.closemenu {
+
+    z-index: 100;
+
+    color: aliceblue;
+
+    transition: 0.5s;
+}
+
+.sideitems li {
+    z-index: 1000;
+
+    padding: 20px;
+    margin-top: 50px;
+    border-bottom: 1.5px solid rgb(68, 68, 68);
+    padding-bottom: 70px;
+    z-index: 158364;
+
 
 
 }
+
 
 .sideitems li:hover {
 
