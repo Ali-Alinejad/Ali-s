@@ -178,7 +178,7 @@
 
 .sideitems {
     position: absolute;
-    left: 0;
+    right: 0;
     width: 400px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.842);
@@ -197,12 +197,13 @@
 #closemenu {
 
     margin-left: 30px;
+    transition: 0.5s;
 }
 
 .sideitems li {
     padding: 20px;
     margin-top: 50px;
-    border-bottom: 1.5px solid rgb(68, 68, 68);
+    border-bottom: 1.5px solid rgba(68, 68, 68, 0.753);
     padding-bottom: 70px;
 
 
@@ -213,7 +214,7 @@
     cursor: pointer;
     color: aliceblue;
     transition: 0.5s;
-    background-color: rgb(194, 52, 52);
+
 
 }
 
