@@ -12,18 +12,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="pushbar/pushbar.css">
+    <script src="pushbar/pushbar.js"></script>
     <title>SHOPINO</title>
 </head>
 
 <body>
 
-    <div class="parent">
+    <div class="parent" id="parent">
 
 
-        <div class="sideitems">
+        <div class="sideitems" id="sideitems">
             <ul>
                 <li>
-                    <span id="closemenu" class="material-symbols-outlined">close</span>
+                    <span id="closemenu" class="material-symbols-outlined" onclick="closenav()">close</span>
                 </li>
                 <li>
                     COntanct
@@ -45,8 +47,8 @@
             <div class="header">
                 <div class="bar">
                     <div class="leftbar">
-                        <input type="button" class="menu1"><span class="material-symbols-outlined"
-                            id="menu1">menu</span>
+                        <input type="button" class="menu1" id="menu1"><span class="material-symbols-outlined"
+                            onclick="openNav()">menu</span>
                     </div>
                     <div class="midbar"> <input type="button" value="مخاطبین" class="contact">
                         <input type="button" value="برند" class="brans" id="brans">

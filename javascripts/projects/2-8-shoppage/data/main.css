@@ -169,7 +169,7 @@
     height: 100px;
     position: absolute;
     right: 0;
-    top: 40%;
+    top: 5.5%;
     padding-right: 5%;
     text-align: center;
 
@@ -178,7 +178,7 @@
 
 .sideitems {
     position: absolute;
-    right: 0;
+    left: 0;
     width: 400px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.842);
@@ -205,6 +205,22 @@
     margin-top: 50px;
     border-bottom: 1.5px solid rgba(68, 68, 68, 0.753);
     padding-bottom: 70px;
+
+
+
+}
+
+.sideitems {
+
+
+    position: absolute;
+    right: 0;
+    width: 200;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.842);
+    color: rgb(187, 187, 187);
+    height: 100vh;
+    z-index: 10;
 
 
 }
