@@ -1,13 +1,16 @@
-document.getElementById("sideitems").style.transform = "translateX(-00px)";
+document.getElementById("sideitems").style.transform = "translateX(-400px)";
 
 const mode = document.querySelector(".body");
 
 document.querySelector(".slide").addEventListener("click", function () {
   document.getElementById("logo").style.backgroundImage =
-    'URL("../pic/00001209.jpg")';
+    'URL("../pic/rulex.png")';
+});
+
+document.querySelector(".menu1").addEventListener("click", function () {
+  document.querySelector(".menu1").textContent = " ";
 });
 function closenav() {
-  document.getElementById("menu1").textContent = "menu";
   document.getElementById("sideitems").style.transform = "translateX(-400px)";
   document.getElementById("sideitems").style.transition = "1s";
 }

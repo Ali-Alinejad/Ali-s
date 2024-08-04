@@ -5,7 +5,13 @@
 
 }
 
+:root {
 
+    --main-font: #f3e98b;
+    --bc-page: #000000d3;
+    --off-font: rgb(212, 186, 38);
+
+}
 
 
 .parent {
@@ -15,17 +21,17 @@
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     text-align: center;
-    background-color: rgb(36, 36, 36);
+    background-color: var(--bc-page);
     background-image: url(../pic/00001209.jpg);
     background-size: contain;
     background-blend-mode: multiply;
-    background-color: rgb(80, 80, 80);
+    background-color: var(--off-font);
     position: relative;
 }
 
 .title {
     grid-area: 1 / 1 / 3 / 4;
-    background-color: rgb(103, 150, 134);
+
     height: 90vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -37,34 +43,43 @@
 
 .header {
     grid-area: 1 / 1 / 3 / 4;
-    background: rgb(0, 0, 0);
+    background: var(--bc-page);
     background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgb(70, 64, 61) 100%);
+
 
 }
 
 .bar {
-    margin-top: 2%;
-    width: 95%;
+
+    background-color: var(--bc-page);
+    height: 260px;
+    width: 100%;
     display: inline-flex;
     justify-content: space-between;
+}
 
+.midbar {
+    text-align: center;
 
 }
 
 .midbar input {
-    margin-left: 60px;
+
+    margin-left: 58px;
 
 }
 
 .bar input {
     border: none;
     background-color: rgba(240, 248, 255, 0);
-    color: rgb(146, 146, 146);
+    color: var(--main-font);
     cursor: pointer;
     font-family: "B Zar";
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
     transition: 1s;
+    margin-top: 35%;
+    position: relative;
 }
 
 
@@ -72,14 +87,33 @@
 .bar input:hover,
 .material-symbols-outlined:hover {
     transition: 0.5s;
-    color: white;
+    color: rgb(224, 179, 29);
 }
 
+.menu1 {
+    padding-left: 50px;
+}
 
 .botheader {
     grid-area: 3 / 1 / 5 / 4;
 
     background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(70, 64, 61) 100%);
+
+}
+
+.logopic {
+
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 0;
+    left: 44%;
+    margin-top: 10px;
+    /* 100 * 16 / 9 */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../pic/logopic.png);
 
 }
 
@@ -90,7 +124,9 @@
     background-position-y: 43%;
     grid-area: 2 / 1 / 4 / 4;
     width: 70%;
+    height: 500px;
     margin-left: 15%;
+    margin-top: 300px;
     border-radius: 30px;
     box-shadow: 50px 50px 100px #000000c5,
         -50px -50px 100px #14141400;
@@ -99,7 +135,7 @@
 
 }
 
-.logo p {
+/* .logo p {
     position: absolute;
     left: 10px;
     top: 250px;
@@ -107,9 +143,9 @@
     font-weight: 400;
     font-style: normal;
     font-size: 40px;
-}
+} */
 
-.logomain {
+/* .logomain {
     position: absolute;
     left: 20px;
     top: 290px;
@@ -122,7 +158,7 @@
     text-shadow: 1px 1px 1px #ffbd5bc5,
         -50px -50px 100px #ffffff00;
     -webkit-text-fill-color: transparent;
-}
+} */
 
 .material-symbols-outlined {
     scale: 1.5;
@@ -131,7 +167,7 @@
         'wght' 500,
         'GRAD' 10000,
         'opsz' 45;
-    color: rgb(204, 204, 204);
+    color: var(--main-font);
     margin: 5px;
     cursor: pointer;
     margin-right: 30px;
@@ -150,13 +186,13 @@
 
 .one {
     height: 100%;
-
+    width: 100%;
     /* 100 * 16 / 9 */
     min-width: 100%;
-    min-height: 56.25vw;
+    min-height: 50VH;
     /* 100 * 9 / 16 */
     overflow: hidden;
-    border-radius: 30px;
+    margin-top: 150px;
     margin-bottom: 40px;
     background-repeat: repeat;
     background-size: cover;
@@ -169,7 +205,7 @@
     height: 100px;
     position: absolute;
     right: 0;
-    top: 5.5%;
+    top: 8%;
     padding-right: 5%;
     text-align: center;
 
@@ -179,10 +215,10 @@
 .sideitems {
     position: absolute;
     left: 0;
-    width: 400px;
+    width: 300px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.842);
-    color: rgb(187, 187, 187);
+    color: var(--main-font);
     height: 100vh;
     z-index: 10;
 
@@ -203,7 +239,7 @@
 .sideitems li {
     padding: 20px;
     margin-top: 50px;
-    border-bottom: 1.5px solid rgba(68, 68, 68, 0.753);
+    border-bottom: 1.5px solid rgba(68, 68, 68, 0.253);
     padding-bottom: 70px;
 
 
@@ -218,7 +254,7 @@
     width: 200;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.842);
-    color: rgb(187, 187, 187);
+    color: var(--main-font);
     height: 100vh;
     z-index: 10;
 
@@ -228,7 +264,7 @@
 .sideitems li:hover {
 
     cursor: pointer;
-    color: aliceblue;
+    color: var(--off-font);
     transition: 0.5s;
 
 
